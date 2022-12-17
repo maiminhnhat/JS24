@@ -61,7 +61,7 @@ function nhapDiaChi() {
   diaChi.quan = readline.question("Nhap quan: ");
   diaChi.thanhPho = readline.question("Nhap thanh pho: ");
 
-  if (!kiemTraThanhPho) console.log("Ban nay khong o TPHCM");
+  if (!kiemTraThanhPho()) console.log("Ban nay khong o TPHCM");
   return diaChi;
 }
 
