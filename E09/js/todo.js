@@ -21,4 +21,19 @@ function createSpan() {
   });
   return span;
 }
+
+function addNewTask() {
+  const input = document.getElementById("myInput");
+  const inputValue = input.value;
+  const myUlTag = document.getElementById("myUL");
+  const liTag = document.createElement("li");
+
+  liTag.addEventListener("click", () => {
+    liTag.classList.toggle("checked");
+  });
+  
+  myUlTag.appendChild(liTag);
+  liTag.innerHTML = inputValue;
+  liTag.appendChild(createSpan());
+}
 handleListTask();
