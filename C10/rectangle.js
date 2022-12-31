@@ -1,6 +1,6 @@
 import { question } from "readline-sync"; // Khai báo thư viện
 
-class point2D {
+class Point2D {
   constructor(x = 0, y = 0) {
     this.x = x;
     this.y = y;
@@ -8,7 +8,7 @@ class point2D {
 }
 
 class Rectangle {
-  constructor(width = 0, height = 0, leftPoint = new point2D(0, 0)) {
+  constructor(width = 0, height = 0, leftPoint = new Point2D(0, 0)) {
     this.width = width;
     this.height = height;
     this.leftPoint = leftPoint;
